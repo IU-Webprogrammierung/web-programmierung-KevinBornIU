@@ -1,0 +1,2 @@
+$ git config --global user.name "KevinBorn"
+$ git config --global user.email kevin.born@iubh-fernstudium.de
