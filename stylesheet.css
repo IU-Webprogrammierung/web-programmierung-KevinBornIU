@@ -1,8 +1,92 @@
 main{
     color: red;
-    font-family: "Roboto";
+    display: flex;
+    flex-direction: column;
+
 }
 
+body{
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: column;
+    margin: 0em;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+.logo{
+  height: 2em;
+}
+
+.nav_links {
+  display: flex;
+}
+
+.nav_links li {
+  display: flex;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.nav_links li a {
+  text-decoration: none;
+  font-size: 1em;
+  color: black;
+}
+
+
+.navigation{
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  background-color: #D0BCFF;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.Zweispaltig {
+  width: 50%;
+}
+
+.Hero{
+  width: 100%;
+}
+
+.Icon{
+  width: 1.5em;
+  margin-left: 0.5em;
+}
+
+.button{
+  font-size: 1em;
+  border-radius: 100px;
+  background-color: 6750A4;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+}
+
+.Button_Container{
+  display: flex;
+}
 
 /*  Schriftarten/Fonts*/
 
@@ -14,7 +98,6 @@ h1{
 p{
     font-size: 1em;
 }
-
 
 /* Roboto-Schriften vorerst zum prüfen */
 

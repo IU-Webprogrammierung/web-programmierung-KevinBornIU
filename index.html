@@ -8,29 +8,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startseite</title>
 </head>
-<main>
 <body>
     <a id="top"></a>
-    <nav>
-        <div class="logo">
-            <a href="index.html"><img src="Bilder/Logo.svg" alt="Logo"></a>     
+    <nav class="navigation">
+        <div>
+            <a  href="index.html"><img class="logo" src="Bilder/Logo.svg" alt="Logo"></a>     
         </div>
-        <ul class="navigation">
-            <li><a href="Übermich.html">Über Mich</a></li>
-            <li><a href="Ausbildung.html">Ausbildung</a></li>
-            <li><a href="Beruf.html">Beruf</a></li>
-            <li><a href="Studium.html">Studium</a></li>
+        <ul class="nav_links">
+            <li ><a class="roboto-bold" href="Übermich.html">Über Mich</a></li>
+            <li ><a class="roboto-bold" href="Ausbildung.html">Ausbildung</a></li>
+            <li ><a class="roboto-bold" href="Beruf.html">Beruf</a></li>
+            <li ><a class="roboto-bold" href="Studium.html">Studium</a></li>
         </ul>
     </nav>
-    <section> 
-        <section> 
+<main>
+    <section class="row"> 
+        <section class="Zweispaltig">
+        <section class="column."> 
             <h1>Kevin Born</h1>
             <p> Herzlich willkommen auf meiner persönlichen Website!</p>
             <p>Ich bin ein leidenschaftlicher UX Designer und Projektleiter. Schön, dass du den Weg zu meiner digitalen Heimat gefunden hast! Auf dieser Seite erfährst du mehr über meine Arbeit, meine Ausbildung und die Projekte, die mich über die Jahre beschäftigt haben. Ich lade dich ein, meine kreative Welt zu erkunden und einen Blick hinter die Kulissen zu werfen. Tauchen Sie ein und lassen Sie sich von meiner Leidenschaft für nutzerzentrierte Gestaltung anstecken. Viel Spaß beim Entdecken!</p>
-            <a href="Dokumente/Lebenslauf.pdf" target="_blank"> Lebenslauf </a><img src="Icons/Arrowright.svg" alt="Icon Arrow Right"> </a>
-            <a href="Dokumente/Visitenkarte.pdf" target="_blank"> Kontakt <img src="Icons/Arrowright.svg" alt="Icon Arrow Right"> </a>
+            <section class="Button_Container">
+                <a class="button" href="Dokumente/Lebenslauf.pdf" target="_blank">Lebenslauf</a>
+                <a class="button" href="Dokumente/Visitenkarte.pdf" target="_blank">Kontakt</a>
+            </section>
         </section>
-        <img src="Herobild.png"> 
+        </section>
+        <section class="Zweispaltig">
+            <img class="Hero" src="Herobild.png"> 
+        </section>
     </section>
     <section>
         <ul class="banner">
@@ -142,6 +148,7 @@
         </section>
     </section>
     <a href="#top"><button>Nach oben</button></a>
+</main>
     <section class="footer"> 
         <ul class="alignleft">
             <li><a href="https://www.instagram.com/kevin_born98/?next=%2F"><img src="Icons/Instagram.svg" alt="Instagram"></a></li>
@@ -154,5 +161,4 @@
         </ul>
     </section>
 </body>
-</main>
 </html>
