@@ -14,15 +14,11 @@ h1{
 p{
     font-size: 1em;
 }
+
+
 /* Roboto-Schriften vorerst zum prüfen */
 
-.roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .roboto-light {
+.roboto-light {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -44,18 +40,6 @@ p{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-  }
-  
-  .roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .roboto-thin-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: italic;
   }
   
   .roboto-light-italic {
@@ -80,10 +64,4 @@ p{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: italic;
-  }
-  
-  .roboto-black-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
+  }  
