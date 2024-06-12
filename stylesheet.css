@@ -15,12 +15,13 @@ body{
 .row{
   display: flex;
   flex-direction: row;
-  align-items: end;
+  align-items: center;
 }
 
 .column{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .logo{
@@ -78,16 +79,19 @@ body{
   padding-right: 2em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  margin-right: 1em;
+  margin-top: 1em;
   color: white;
   text-decoration: none;
   align-items: center;
   display: flex;
-  justify-content: space-between;
-  margin: 1em;
+  width: fit-content;
 }
 
 .Button_Container{
   display: flex;
+  justify-content: space-between;
+  width: fit-content
 }
 
 .Bannerband{
@@ -110,27 +114,55 @@ body{
 .Dreispaltig{
   display: flex;
   justify-content: space-between 2em;
-  padding-left: 3em;
-  padding-right: 3em;
+  flex-wrap: wrap;
+  gap: 2em;
   /* Hier fehlt noch die gleichmäßige Größe der Boxen */
 }
 .Kachelcontainer{
   padding: 1.5em;
   margin-top: 2em;
-  margin-left: 2em;
   display: flex;
   flex: 1;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   background-color: #FEF7FF ;
   border-radius: 12px;
   box-shadow: 30% #000000;
   /* shadow wird noch nicht angezeigt*/
 }
 
+.Container_Transparent{
+  margin-top: 2em;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: left;
+}
+
+.Weißraum {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/*Bilder*/
+
+.illustration{
+  height: 4em;
+  padding: 1em;
+}
+
 /*  Schriftarten/Fonts*/
 
 h1{
     font-size: 4em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+h2{
+  font-size: 2.25em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .black{
@@ -142,11 +174,16 @@ h1{
 }
 
 p{
-    font-size: 1,125em;
+    font-size: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: justify;
 }
 
 h3{
   font-size: 1.625em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 /* Roboto-Schriften vorerst zum prüfen */
