@@ -1,5 +1,4 @@
 main{
-    color: red;
     display: flex;
     flex-direction: column;
 
@@ -110,15 +109,22 @@ body{
 
 .Dreispaltig{
   display: flex;
+  justify-content: space-between 2em;
+  padding-left: 3em;
+  padding-right: 3em;
   /* Hier fehlt noch die gleichmäßige Größe der Boxen */
 }
 .Kachelcontainer{
   padding: 1.5em;
+  margin-top: 2em;
+  margin-left: 2em;
   display: flex;
+  flex: 1;
   flex-direction: row;
   background-color: #FEF7FF ;
   border-radius: 12px;
   box-shadow: 30% #000000;
+  /* shadow wird noch nicht angezeigt*/
 }
 
 /*  Schriftarten/Fonts*/
@@ -137,6 +143,10 @@ h1{
 
 p{
     font-size: 1,125em;
+}
+
+h3{
+  font-size: 1.625em;
 }
 
 /* Roboto-Schriften vorerst zum prüfen */
