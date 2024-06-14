@@ -1,7 +1,8 @@
 main{
     display: flex;
     flex-direction: column;
-
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 body{
@@ -138,11 +139,6 @@ body{
   align-items: left;
 }
 
-.Weißraum {
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
 /*Bilder*/
 
 .illustration{
@@ -150,30 +146,3 @@ body{
   padding: 1em;
 }
 
-/*  Schriftarten/Fonts*/
-
-h1{
-    font-size: 4em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-h2{
-  font-size: 2.25em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-
-.black{
-  color: black;
-}
-
-.white{
-  color: white;
-}
-
-h3{
-  font-size: 1.625em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
