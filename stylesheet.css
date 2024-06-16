@@ -128,6 +128,25 @@ footer {
   width: fit-content;
 }
 
+summary{
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 1em;
+  border-bottom: #000000 1px solid;
+}
+
+.dropdown_content{
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+
+
+
+
 .top_up_button {
   height: 100% width;
   width: fit-content;

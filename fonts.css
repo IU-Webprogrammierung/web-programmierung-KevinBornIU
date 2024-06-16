@@ -43,6 +43,18 @@ h3{
   margin-right: 0.25em;
 }
 
+.dropdown_label{
+  font-weight: 700;
+  width: 15em;
+  margin-right: 0.5em;
+}
+
+.dropdown_text{
+  width: 30em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
  /* latin */
   @font-face {
     font-family: 'Roboto';
