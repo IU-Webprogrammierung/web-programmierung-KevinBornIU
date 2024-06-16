@@ -86,12 +86,12 @@ footer {
 }
 
 .Icon{
-  width: 1em;
+  width: 1.2em;
   margin-left: 0.5em;
 }
 
 .button{
-  font-size: 0.8em;
+  font-size: 1em;
   border-radius: 100px;
   background-color: #6750A4;
   padding-left: 2em;
@@ -107,8 +107,12 @@ footer {
   width: fit-content;
 }
 
+.button :hover{
+  /* Hover effekt muss noch eingebaut werden */
+}
+
 .buttonsecondary {
-  font-size: 0.8em;
+  font-size: 1em;
   border-radius: 100px;
   background-color: #EADDFF;
   padding-left: 2em;
@@ -126,13 +130,14 @@ footer {
 
 .Button_Container{
   display: flex;
-  justify-content: space-between;
-  width: fit-content
+  justify-content: center;
+  width: fit-content;
+
 }
 
 .Button_Container_wide{
   display: flex;
-  justify-content: space-between;
+  justify-content: center
 }
 
 .Bannerband{
