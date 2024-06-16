@@ -37,6 +37,11 @@ h3{
     text-align: left;
 }
 
+.buttonlabel{
+  font-weight: 500;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
 
  /* latin */
   @font-face {
