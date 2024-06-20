@@ -85,6 +85,10 @@ footer {
   width: 100%;
 }
 
+.Bildcontainer{
+  width: 30%;
+}
+
 .Icon{
   width: 1.2em;
   margin-right: 0.25em;
@@ -192,7 +196,6 @@ summary{
   justify-content: space-between 2em;
   flex-wrap: wrap;
   gap: 2em;
-  /* Hier fehlt noch die gleichmäßige Größe der Boxen */
 }
 .Kachelcontainer{
   padding: 1.5em;
@@ -215,6 +218,10 @@ summary{
   align-items: left;
 }
 
+.Textblock{
+  
+}
+
 /*Bilder*/
 
 .illustration{
@@ -230,8 +237,17 @@ summary{
 }
 
 .tabs__label {
-  padding: 10px 16px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   cursor: pointer;
+  background-color: #E6E0E9;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-left: 2px solid #79767D;
+  border-right: 2px solid #79767D;
+  border-top: 2px solid #79767D;
 }
 
 .tabs__radio {
@@ -241,16 +257,18 @@ summary{
 .tabs__content {
   order: 1;
   width: 100%;
-  border-bottom: 3px solid #dddddd;
-  line-height: 1.5;
-  font-size: 0.9em;
+  border: 2px solid #79767D;
   display: none;
+  padding: 2em;
 }
 
 .tabs__radio:checked + .tabs__label {
-  font-weight: bold;
-  color: #009578;
-  border-bottom: 2px solid #009578;
+  font-weight: 700;
+  border-left: 2px solid #79767D;
+  border-right: 2px solid #79767D;
+  border-top: 2px solid #79767D;
+  background-color: white;
+ 
 }
 
 .tabs__radio:checked + .tabs__label + .tabs__content {
