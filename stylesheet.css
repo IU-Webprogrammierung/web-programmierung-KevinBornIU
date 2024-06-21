@@ -85,9 +85,24 @@ footer {
   width: 100%;
 }
 
-.Bildcontainer{
-  width: 30%;
+.Kachelbild_App{
+  width: 50%;
 }
+
+.Bildcontainer_column{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.Bildcontainer_row{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 
 .Icon{
   width: 1.2em;
@@ -218,8 +233,29 @@ summary{
   align-items: left;
 }
 
-.Textblock{
-  
+.Textblock_links{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-right: 2em;
+}
+
+.Textblock_rechts{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-left: 2em;
+}
+
+.Textblock_einzeln{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.Beschreibung{
+  display: flex;
+  flex-direction: column;
 }
 
 /*Bilder*/
@@ -258,6 +294,9 @@ summary{
   order: 1;
   width: 100%;
   border: 2px solid #79767D;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   display: none;
   padding: 2em;
 }
