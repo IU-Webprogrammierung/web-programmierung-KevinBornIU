@@ -208,7 +208,7 @@ summary{
 
 .Dreispaltig{
   display: flex;
-  justify-content: space-between 2em;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 2em;
 }
