@@ -3,11 +3,9 @@
 main{
     display: flex;
     flex-direction: column;
-    padding-left: 10%;
-    padding-right: 10%;
 }
 
-@media (width <= 600px) {
+@media (width <=600px) {
 body{
     display: flex;
     flex-direction: column;
@@ -16,7 +14,7 @@ body{
 }
 }
 
-@media (width >= 600px){
+@media (width >600px){
   body{
       display: flex;
       flex-direction: column;
@@ -66,12 +64,22 @@ footer {
 
 /* Interaktive Elemente*/
 
+@media (width <=600px){
 .Button_Container{
   display: flex;
   justify-content: center;
   width: fit-content;
-
+  width: 100%;
+} 
 }
+
+@media (width >600px){
+  .Button_Container{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+  } 
+  }
 
 .Button_Container_wide{
   display: flex;
@@ -162,7 +170,12 @@ summary{
 
 /* Strukturelle Klassen zur Einteilung des Contents*/
 
-@media (width <= 600px) {
+.Weißraum{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+@media (width <=600px) {
   .Hero{
     display: flex;
     flex-direction: column-reverse;
@@ -170,7 +183,7 @@ summary{
   }
   }
   
-@media (width >= 600px){
+@media (width >600px){
   .Hero{
     display: flex;
     flex-direction: row;
@@ -193,26 +206,52 @@ summary{
 .Inhaltsbereich{
   margin-top: 2em;
 }
-
+@media (width <=600px){
 .Dreispaltig{
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2em;
+  flex-direction:column ;
+}
+}
+@media (width >600px){
+  .Dreispaltig{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 1em;
+  }
 }
 
-@media (width <= 600px) {
+@media (width <=600px) {
   .Zweispaltig {
     width: 100%;
   }
   }
   
-@media (width >= 600px){
+@media (width >600px){
 .Zweispaltig {
   width: 50%;
 }
 }
 
+@media (width <=600px){
+  .Kachelcontainer{
+    padding: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    gap: 1em;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FEF7FF ;
+    border-radius: 12px;
+    box-shadow: 30% #000000;
+    /* shadow wird noch nicht angezeigt*/
+  }
+  }
+
+@media (width >600px){
 .Kachelcontainer{
   padding: 1.5em;
   margin-top: 2em;
@@ -226,10 +265,31 @@ summary{
   box-shadow: 30% #000000;
   /* shadow wird noch nicht angezeigt*/
 }
+}
 
+@media (width <=600px){
 .Kontentcontainer{
   padding: 2.75em;
 }
+}
+
+@media (width >600px){
+  .Kontentcontainer{
+    padding: 2.75em;
+  }
+  }
+
+@media (width <=600px){
+.Kontentcontainer_Hero{
+  padding: 0em;
+}
+}
+    
+@media (width >600px){
+  .Kontentcontainer_Hero{
+  padding-right: 2em;
+  }
+}  
 
 .Container_Transparent{
   margin-top: 2em;
@@ -292,7 +352,7 @@ summary{
   height: 2em;
 }
 
-.Hero{
+.Herobild{
   width: 100%;
 }
 
