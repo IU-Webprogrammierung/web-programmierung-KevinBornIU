@@ -56,10 +56,21 @@ h4{
   margin-right: 0.5em;
 }
 
+@media (width <=600px){
 .dropdown_text{
   width: 30em;
   margin-left: 0.5em;
   margin-right: 0.5em;
+  display: none;
+}
+}
+
+@media (width >600px){
+.dropdown_text{
+   width: 30em;
+   margin-left: 0.5em;
+   margin-right: 0.5em;
+}
 }
 
  /* latin */
