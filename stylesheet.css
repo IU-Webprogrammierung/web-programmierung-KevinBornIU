@@ -181,19 +181,21 @@ summary{
 }
 
 @media (width <=600px) {
-  .Hero{
+  .Bild_Text{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     gap: 1em;
+    margin-bottom: 1em;
   }
   }
   
 @media (width >600px){
-  .Hero{
+  .Bild_Text{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 1em;
   }
 }
 
@@ -307,19 +309,39 @@ summary{
 }
 
 /*Styles für Textblöcke*/ 
-
+@media (width <=600px){
+  .Textblock_links{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-self: flex-start;
+  }
+}
+@media (width >600px){
 .Textblock_links{
   display: flex;
   flex-direction: column;
   gap: 1em;
   padding-right: 2em;
 }
+}
 
+@media (width <=600px){
 .Textblock_rechts{
   display: flex;
   flex-direction: column;
   gap: 1em;
-  padding-left: 2em;
+  margin-top: 1em;
+}
+}
+
+@media (width >600px){
+  .Textblock_rechts{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-left: 2em;
+  }
 }
 
 .Textblock_einzeln{
@@ -334,12 +356,22 @@ summary{
 }
 
 /* Styles zur Darstellung der verschiedenen Bildelementen*/
+@media (width <=600px){
+.Bildcontainer_column{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+}
 
+@media (width >600px){
 .Bildcontainer_column{
   width: 40%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  }  
 }
 
 .Bildcontainer_row{
@@ -348,6 +380,7 @@ summary{
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 
 .Icon{
   width: 1.2em;
@@ -369,6 +402,11 @@ summary{
 
 .Kachelbild_App{
   width: 50%;
+}
+
+.Kachelbild_Tabs{
+  width: 100%;
+  height: auto;
 }
 
 .illustration{
@@ -436,7 +474,7 @@ margin-left: 0.25em;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   display: none;
-  padding: 2em;
+  padding: 1.5em;
 }
 
 .tabs__radio:checked + .tabs__label {
