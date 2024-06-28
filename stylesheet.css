@@ -453,6 +453,8 @@ margin-left: 0.25em;
   border-top: 2px solid #79767D;
   align-items: center;
   display: flex;
+  flex-grow: 1;
+  justify-content: center;
 /* Hier noch prüfen, ob die Tabs immer die gesamte Breite ausnützen können*/
 
 }
@@ -470,7 +472,6 @@ margin-left: 0.25em;
   order: 1;
   width: 100%;
   border: 2px solid #79767D;
-  border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   display: none;
