@@ -55,6 +55,10 @@ body{
   color: black;
 }
 
+.nav_links li a:hover{
+  font-weight: 700;
+}
+
 footer {
   display: flex; 
   flex-direction: row;
