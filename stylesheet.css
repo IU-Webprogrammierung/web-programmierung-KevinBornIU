@@ -107,7 +107,8 @@ footer {
   width: fit-content;
 }
 
-.button :hover{
+.button:hover{
+  box-shadow: 0px 2px 3px 0px #00000030, 0px 2px 4px 2px #00000015;
   /* Hover effekt muss noch eingebaut werden */
 }
 
@@ -125,6 +126,11 @@ footer {
   align-items: center;
   display: flex;
   width: fit-content;
+}
+
+.buttonsecondary:hover{
+  box-shadow: 0px 2px 3px 0px #00000030, 0px 2px 4px 2px #00000015;
+  background-color: #6750A4;
 }
 
 .top_up_button {
@@ -259,7 +265,7 @@ summary{
     align-items: center;
     background-color: #FEF7FF ;
     border-radius: 12px;
-    box-shadow: 30% #000000;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     /* shadow wird noch nicht angezeigt*/
   }
   }
@@ -275,7 +281,7 @@ summary{
   align-items: center;
   background-color: #FEF7FF ;
   border-radius: 12px;
-  box-shadow: 30% #000000;
+  box-shadow: 0px 4px 8px 3px #00000015, 0px 1px 3px 0px #00000030;
   /* shadow wird noch nicht angezeigt*/
 }
 }
