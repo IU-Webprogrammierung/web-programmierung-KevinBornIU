@@ -84,7 +84,6 @@ footer {
 @media (width >600px){
   .Button_Container{
     display: flex;
-    justify-content: center;
     width: fit-content;
   } 
   }
@@ -470,12 +469,13 @@ li{
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   cursor: pointer;
-  background-color: #E6E0E9;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  background-color:#FFFFFF;
+  border-bottom: 2px solid #E6E0E9;
   border-left: 2px solid #79767D;
   border-right: 2px solid #79767D;
   border-top: 2px solid #79767D;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   align-items: center;
   display: flex;
   flex-grow: 1;
@@ -494,11 +494,14 @@ li{
 .tabs__content {
   order: 1;
   width: 100%;
-  border: 2px solid #79767D;
+  border-left:2px solid #79767D;;
+  border-right:2px solid #79767D; 
+  border-bottom:2px solid #79767D; ;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   display: none;
   padding: 1.5em;
+  background-color: #FFFFFF
 }
 
 .tabs__radio:checked + .tabs__label {
@@ -506,8 +509,8 @@ li{
   border-left: 2px solid #79767D;
   border-right: 2px solid #79767D;
   border-top: 2px solid #79767D;
-  background-color: white;
- 
+  background-color: #FFFFFF;
+  border-bottom: 2px solid #6750A4;
 }
 
 .tabs__radio:checked + .tabs__label + .tabs__content {
