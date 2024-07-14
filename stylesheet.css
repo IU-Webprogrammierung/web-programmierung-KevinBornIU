@@ -37,10 +37,19 @@ body{
   background-color: #D0BCFF;
   padding-left: 2em;
   padding-right: 2em;
+  height: 60px;
 }
 
+@media (width >600px) {
 .nav_links {
   display: flex;
+}
+}
+
+@media (width <=600px) {
+  .nav_links {
+    display: none;
+  }
 }
 
 .nav_links li {
@@ -59,6 +68,74 @@ body{
   transform: scale(1.1);
 }
 
+@media (width >600px) {
+.mobile {
+  display: none;
+}
+}
+
+@media (width <=600px) {
+  .mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+  }
+  }
+
+
+/* Test für Mobiles Burgermenü*/ 
+
+.container {
+  height: 60px;
+}
+
+.navbar {
+  width: 100%;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+
+.container .checkbox {
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  top: 10px;
+  left: 10px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.navbar .menu-items {
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 100%;
+  padding-top: 120px;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+  transform: translate(-150%);
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+  background-color: white;
+}
+
+.nav_links_mobile {
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  padding-top: 4em;
+  text-align: center;
+  padding-inline-start: 0px;
+}
+
+.nav_links_mobile li a {
+text-decoration: none;
+font-size: 1em;
+color: black;
+}
+
 footer {
   display: flex; 
   flex-direction: row;
@@ -68,6 +145,26 @@ footer {
   padding-left: 1em;
   padding-right: 1em;
   margin-top: 2em;
+}
+
+.nav_links_footer {
+  display: flex;
+}
+
+.nav_links_footer li {
+  display: flex;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.nav_links_footer li a {
+  text-decoration: none;
+  font-size: 1em;
+  color: black;
+}
+
+.nav_links_footer li a:hover{
+  transform: scale(1.1);
 }
 
 /* Interaktive Elemente*/
