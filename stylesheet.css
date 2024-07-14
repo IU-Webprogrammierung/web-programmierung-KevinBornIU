@@ -1,3 +1,15 @@
+/*Media Querie Vorlage
+
+@media (width >600px){
+
+}
+
+@media (width <=600px) {
+
+}
+
+*/
+
 /* Generelle Klassen*/
 
 main{
@@ -43,6 +55,7 @@ body{
 @media (width >600px) {
 .nav_links {
   display: flex;
+  justify-content: flex-end;
 }
 }
 
@@ -87,6 +100,8 @@ body{
 
 
 /* Test für Mobiles Burgermenü*/ 
+
+/* 1. Versuch Burgermenü Start*/
 
 .container {
   height: 60px;
@@ -181,6 +196,126 @@ height: 60px;
   transform-origin: 0% 100%;
   transition: transform 0.4s ease-in-out;
 }
+
+/* 1. Versuch Burgermenü Ende*/
+
+/*2. Versuch BurgerMenü Start*/ 
+
+@media (width >600px){
+  nav{
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D0BCFF;
+  padding-left: 2em;
+  padding-right: 2em;
+  height: 60px;
+}
+}
+
+@media (width <=600px) {
+  nav {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  background-color: #D0BCFF;
+  padding-left: 2em;
+  padding-right: 2em;
+  height: 60px;
+  }
+}
+
+
+@media (width >600px) {
+  nav ul {
+    display: flex;
+    justify-content: flex-start;
+  }
+  }
+  
+  @media (width <=600px) {
+    nav ul {
+      display: none;
+      top: 60px;
+      left: 0px;
+	    width: 100vh;
+      height: 100%;
+      background-color: white;
+      z-index: 1;
+      position: absolute;
+    }
+  }
+
+nav ul li{
+	padding: 5px 30px;
+	text-align: center;
+  display: flex;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1em;
+  color: black;
+  font-weight: 500;
+}
+
+nav ul li a:hover{
+  transform: scale(1.1);
+}
+
+@media (width <=600px) {
+	nav ul li{
+		width: 100%;
+		padding: 15px 0px;
+	}
+	nav ul {
+		display: none;
+	}
+}
+
+.burgericon {
+	width: 30px;
+	height: 30px;
+	display: none;
+}
+.burgericon div {
+	width: 90%;
+	margin: 7px 5%;
+	height: 3px;
+	background-color: black;
+}
+
+@media (width <=600px)  {
+	.burgericon {
+		display: block;
+	}
+}
+
+#navigation {
+	opacity: 0;
+  right: 10%;
+}
+#navigation:checked ~ ul {
+	display: block;
+}
+#navigation:checked ~ label .burgericon {
+	margin-top: 15px;
+}
+#navigation:checked ~ label .burgericon div:first-of-type{
+	rotate: 45deg;
+}
+#navigation:checked ~ label .burgericon div:last-child{
+	rotate: -45deg;
+	margin-top: -10px;
+}
+#navigation:checked ~ label .burgericon div:nth-child(2){
+	display: none;
+}
+
+/*2. Versuch BurgerMenü Ende*/ 
 
 
 .nav_links_mobile {
