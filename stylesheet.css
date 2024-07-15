@@ -246,7 +246,7 @@ height: 60px;
       z-index: 1;
       position: absolute;
       overflow: hidden;
-      ;
+      padding: 0px;
     }
   }
 
@@ -272,7 +272,7 @@ nav ul li a:hover{
 @media (width <=600px) {
 	nav ul li{
 		width: 100%;
-		padding: 15px 0px;
+		padding: 1em 2em;
 	}
 	nav ul {
 		display: none;
