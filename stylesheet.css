@@ -218,6 +218,7 @@ height: 60px;
   nav {
   display: flex; 
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   background-color: #D0BCFF;
   padding-left: 2em;
@@ -239,11 +240,13 @@ height: 60px;
       display: none;
       top: 60px;
       left: 0px;
-	    width: 100vh;
-      height: 100%;
+	    width: 100vw;
+      height: 100vh;
       background-color: white;
       z-index: 1;
       position: absolute;
+      overflow: hidden;
+      ;
     }
   }
 
