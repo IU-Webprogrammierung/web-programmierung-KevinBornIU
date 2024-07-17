@@ -101,104 +101,6 @@ body{
 
 /* Test für Mobiles Burgermenü*/ 
 
-/* 1. Versuch Burgermenü Start*/
-
-.container {
-  height: 60px;
-  width: 100%;
-}
-
-@media (width >600px) {
-.navigation1{
-display: flex; 
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-background-color: #D0BCFF;
-padding-left: 2em;
-padding-right: 2em;
-height: 60px;
-}
-}
-
-@media (width <=600px) {
-  .navigation1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 2%;
-    padding-right: 2%;
-    background-color: #D0BCFF;
-    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
-    height: 60px;
-    align-items: center;
-  }
-}
-
-.container .checkbox {
-  position: absolute;
-  height: 32px;
-  width: 32px;
-  top: 10px;
-  right: 2%;
-  z-index: 5;
-  opacity: 0;
-}
-
-.navigation1 .menu-items {
-  display: flex;
-  gap: 2em;
-  flex-direction: column;
-  height: 100vh;
-  width: 100%;
-  padding-top: 120px;
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-  transform: translate(-150%);
-  transition: transform 0.5s ease-in-out;
-  text-align: center;
-  background-color: white;
-}
-
-.container input[type='checkbox']:checked ~ .menu-items {
-  transform: translateX(0);
-}
-
-.container .hamburger {
-  height: 26px;
-  width: 32px;
-  position: absolute;
-  top: 16px;
-  right: 14px;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.container .hamburger .line {
-  display: block;
-  height: 4px;
-  width: 100%;
-  border-radius: 10px;
-  background: #0e2431;
-}
-
-.container .hamburger .line-top {
-  transform-origin: 0% 0%;
-  transition: transform 0.4s ease-in-out;
-}
-
-.container .hamburger .line-middle {
-  transition: transform 0.2s ease-in-out;
-}
-
-.container .hamburger .line-bottom {
-  transform-origin: 0% 100%;
-  transition: transform 0.4s ease-in-out;
-}
-
-/* 1. Versuch Burgermenü Ende*/
-
 /*2. Versuch BurgerMenü Start*/ 
 
 @media (width >600px){
@@ -273,6 +175,7 @@ nav ul li a:hover{
 	nav ul li{
 		width: 100%;
 		padding: 1em 2em;
+    border-bottom: #4F378B solid 1px;
 	}
 	nav ul {
 		display: none;
