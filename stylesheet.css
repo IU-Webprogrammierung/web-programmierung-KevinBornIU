@@ -33,9 +33,9 @@ body{
       margin: 0em;
       font-size: 16px;
       background:
-        url(Bilder/Dekorative_Elemente/Group1.svg) no-repeat 100% 30%,
-        url(Bilder/Dekorative_Elemente/Group1.svg) no-repeat -20% 50%,
-        url(Bilder/Dekorative_Elemente/Group1.svg) no-repeat 35% 110%;
+        url(Bilder/Dekorative_Elemente/Group1.svg) no-repeat 115% 550px,
+        url(Bilder/Dekorative_Elemente/Group1.svg) no-repeat -20% 1150px,
+        url(Bilder/Dekorative_Elemente/Group1.svg) no-repeat 35% 2000px;
   }
   }
 
