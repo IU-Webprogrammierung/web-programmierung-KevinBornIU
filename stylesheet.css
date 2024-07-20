@@ -37,7 +37,6 @@ body {
       url(Bilder/Dekorative_Elemente/Group1.svg) no-repeat -25% 1150px,
       url(Bilder/Dekorative_Elemente/Group1.svg) no-repeat 35% 2500px;
     background-size: 50% 50%, 35% 35%, 20% 20%;
-    opacity: 100%, 50%, 50%;
   }
 }
 
@@ -390,17 +389,6 @@ footer {
 
 /*Ende des Tests für Top Up Button*/
 
-.top_up_button {
-  height: 100% width;
-  width: fit-content;
-}
-
-.top_up {
-  display: flex;
-  justify-content: right;
-  padding-right: 1em;
-}
-
 summary {
   display: flex;
   flex: row;
@@ -419,6 +407,10 @@ summary {
 .dropdown {
   margin-top: 1em;
   margin-bottom: 2em;
+}
+
+details[open] .Icon {
+  transform: rotate(180deg);
 }
 
 /* Darstellung des Bannerbands über die gesamte Breite des Displays*/
