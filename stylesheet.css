@@ -103,11 +103,6 @@ body{
   }
   }
 
-
-/* Test für Mobiles Burgermenü*/ 
-
-/*2. Versuch BurgerMenü Start*/ 
-
 @media (width >600px){
   nav{
   display: flex; 
@@ -225,9 +220,6 @@ nav ul li a:hover{
 #navigation:checked ~ label .burgericon div:nth-child(2){
 	display: none;
 }
-
-/*2. Versuch BurgerMenü Ende*/ 
-
 
 .nav_links_mobile {
   display: flex;
