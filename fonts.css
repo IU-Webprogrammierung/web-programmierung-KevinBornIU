@@ -22,7 +22,6 @@ body.no-scroll {
     font-weight: 300;
  }
 
-
  @media (width >600px){
   h1{
     font-size: 3em;
@@ -131,6 +130,10 @@ font-weight: 500;
 
 .tabs__radio:checked + .tabs__label {
   font-weight: 700;
+}
+
+address{
+  font-style: normal;
 }
 
  /* latin */

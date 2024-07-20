@@ -12,9 +12,8 @@
 
 /* Generelle Klassen*/
 
-main{
-    display: flex;
-    flex-direction: column;
+html, body {
+  height: 100%;
 }
 
 @media (width <=600px) {
@@ -38,6 +37,12 @@ body{
         url(Bilder/Dekorative_Elemente/Group1.svg) no-repeat 35% 2000px;
   }
   }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
 
 /*Header & Footer Darstellung */
 
@@ -275,6 +280,14 @@ footer {
   transform: scale(1.1);
 }
 
+.Impressum{
+  display: flex;
+  height: max-content;
+  flex-direction: column;
+  flex-grow: 1;
+
+}
+
 /* Interaktive Elemente*/
 
 @media (width <=600px){
@@ -470,6 +483,8 @@ summary{
 .Weißraum{
   margin-left: 10%;
   margin-right: 10%;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (width <=600px) {
