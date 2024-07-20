@@ -33,9 +33,11 @@ body {
     margin: 0em;
     font-size: 16px;
     background:
-      url(Bilder/Dekorative_Elemente/Group1.svg) no-repeat 115% 550px,
-      url(Bilder/Dekorative_Elemente/Group1.svg) no-repeat -20% 1150px,
-      url(Bilder/Dekorative_Elemente/Group1.svg) no-repeat 35% 2000px;
+      url(Bilder/Dekorative_Elemente/Group1.svg) no-repeat 135% 550px,
+      url(Bilder/Dekorative_Elemente/Group1.svg) no-repeat -25% 1150px,
+      url(Bilder/Dekorative_Elemente/Group1.svg) no-repeat 35% 2500px;
+    background-size: 50% 50%, 35% 35%, 20% 20%;
+    opacity: 100%, 50%, 50%;
   }
 }
 
@@ -355,6 +357,39 @@ footer {
   background-color: #6750A4;
 }
 
+/*Test für Top Up button*/ 
+
+#top_up {
+  display: none;
+  z-index: 5;
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #EADDFF;
+  cursor: pointer;
+  padding: 15px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#top_up:hover {
+  background-color: #6750A4
+}
+
+#top_up.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#top_up.hide {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+/*Ende des Tests für Top Up Button*/
+
 .top_up_button {
   height: 100% width;
   width: fit-content;
@@ -506,10 +541,21 @@ summary {
   }
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+@media (width >600px){
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (width <=600px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 .column {
@@ -543,12 +589,14 @@ summary {
 @media (width <=600px) {
   .Zweispaltig {
     width: 100%;
+    padding: 0px;
   }
 }
 
 @media (width >600px) {
   .Zweispaltig {
     width: 50%;
+    padding: 0px;
   }
 }
 
@@ -561,7 +609,7 @@ summary {
     display: flex;
     flex: 1;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     background-color: #FEF7FF;
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
