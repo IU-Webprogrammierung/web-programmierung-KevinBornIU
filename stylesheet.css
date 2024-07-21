@@ -581,14 +581,14 @@ details[open] .Icon {
 @media (width <=600px) {
   .Zweispaltig {
     width: 100%;
-    padding: 0px;
+    padding-left: 0px;
   }
 }
 
 @media (width >600px) {
   .Zweispaltig {
     width: 50%;
-    padding: 0px;
+    padding-left: 0px;
   }
 }
 
@@ -655,6 +655,48 @@ details[open] .Icon {
   flex: 1;
   flex-direction: column;
   align-items: left;
+}
+
+ul{
+  padding-left: 0px;
+}
+
+/* CSS für Tabellen*/
+
+.table-container{
+  overflow-x: auto;
+}
+
+table{
+  border-spacing: 0px;
+  width: 100%;
+  border: #4F378B solid thin;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+th{
+  text-align: left;
+  vertical-align: top;
+  background-color: #F6EDFF;
+  border: #4F378B solid thin;
+  padding: 0.25em;
+  white-space: nowrap;
+}
+
+td{
+  text-align: left;
+  vertical-align: top;
+  background-color: white;
+  border: #4F378B solid thin;
+  padding: 0.25em;
+  white-space: nowrap;
+}
+
+th.sticky, td.sticky {
+  position: sticky;
+  left: 0;
+  z-index: 1;
 }
 
 /*Styles für Textblöcke*/
