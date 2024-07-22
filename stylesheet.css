@@ -246,8 +246,6 @@ nav ul li a:hover {
   font-weight: 500;
 }
 
-/* Ende Tests mit Burger Menü*/
-
 footer {
   display: flex;
   flex-direction: row;
@@ -356,7 +354,7 @@ footer {
   background-color: #6750A4;
 }
 
-/*Test für Top Up button*/ 
+/*Top-Up button mit Animation, der nur sichtbar wird, wenn gescrollt wurde*/
 
 #top_up {
   display: none;
@@ -387,7 +385,7 @@ footer {
   transform: translateY(100px);
 }
 
-/*Ende des Tests für Top Up Button*/
+/*Accordeon mit animierten Icon*/
 
 summary {
   display: flex;
@@ -448,11 +446,8 @@ details[open] .Icon {
     width: fit-content;
     overflow: hidden;
     animation: marquee 15s linear infinite;
-    animation-delay: 0s;
   }
 }
-
-/* Trotz Animation Delay wird die Animation erst nach einiger Zeit ausgeführt.*/
 
 @keyframes marquee {
   0% {
@@ -522,6 +517,7 @@ details[open] .Icon {
     flex-direction: column;
     align-items: center;
     gap: 1em;
+    background-color: white;
   }
 }
 
@@ -530,6 +526,7 @@ details[open] .Icon {
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: white;
   }
 }
 
