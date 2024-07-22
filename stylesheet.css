@@ -675,22 +675,44 @@ table{
   margin-bottom: 1em;
 }
 
-th{
-  text-align: left;
-  vertical-align: top;
-  background-color: #F6EDFF;
-  border: #4F378B solid thin;
-  padding: 0.25em;
-  white-space: nowrap;
+@media (width >600px){
+  th{
+    text-align: left;
+    vertical-align: top;
+    background-color: #F6EDFF;
+    border: #4F378B solid thin;
+    padding: 0.25em;
+    white-space: nowrap;
+  }
+
+  td{
+    text-align: left;
+    vertical-align: top;
+    background-color: white;
+    border: #4F378B solid thin;
+    padding: 0.25em;
+    white-space: nowrap;
+  }
 }
 
-td{
-  text-align: left;
-  vertical-align: top;
-  background-color: white;
-  border: #4F378B solid thin;
-  padding: 0.25em;
-  white-space: nowrap;
+@media (width <=600px){
+  th{
+    text-align: left;
+    vertical-align: top;
+    background-color: #F6EDFF;
+    border: #4F378B solid thin;
+    padding: 0.25em;
+    white-space: nowrap;
+  }
+  
+  td{
+    text-align: left;
+    vertical-align: top;
+    background-color: white;
+    border: #4F378B solid thin;
+    padding: 0.25em;
+    white-space: nowrap;
+  }
 }
 
 th.sticky, td.sticky {
