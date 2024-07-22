@@ -854,6 +854,10 @@ li {
   padding: 0.1em;
 }
 
+video{
+  width: 100%;
+}
+
 /*Darstellung der Tabs*/
 .tabs {
   display: flex;
