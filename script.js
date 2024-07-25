@@ -1,3 +1,5 @@
+// Setzt Background auf "no scroll" sobald das Burgermenu sich öffnet
+
 document.addEventListener('DOMContentLoaded', () => {
     const navigationCheckbox = document.getElementById('navigation');
     

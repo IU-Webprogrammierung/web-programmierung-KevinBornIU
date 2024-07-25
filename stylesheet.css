@@ -530,6 +530,24 @@ details[open] .Icon {
   }
 }
 
+@media (width <=600px) {
+  .Text_Zweispaltig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+}
+
+@media (width >600px) {
+  .Text_Zweispaltig {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+
 @media (width >600px){
   .row {
     display: flex;
@@ -778,7 +796,6 @@ th.sticky, td.sticky {
 
 @media (width >600px) {
   .Bildcontainer_column {
-    width: 40%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
